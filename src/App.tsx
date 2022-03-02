@@ -1,10 +1,9 @@
 import React from 'react';
+import { Body } from './Body';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <p>Hello World</p>
-    </div>
+    <Body />
   );
 };
 
