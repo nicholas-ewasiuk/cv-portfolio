@@ -8,6 +8,9 @@ import { SmDiamondIcon } from './components/images/SmDiamondIcon';
 import { PolyOneBorder } from './components/images/PolyOneBorder';
 import { PolyTwoBorder } from './components/images/PolyTwoBorder';
 import { PolyThreeBorder } from './components/images/PolyThreeBorder';
+import wizardStudy from "url:./assets/img/wizardstudy.png";
+import kingCrow from "url:./assets/img/kingcrow.png";
+import kelpie from "url:./assets/img/kelpie.png";
 
 export const Body: React.FC = () => {
 
@@ -18,28 +21,78 @@ export const Body: React.FC = () => {
         css={css`
           display: flex;
           flex-direction: row;
+          width: 200px;
+          justify-content: space-around;
+          margin: 20px 0 20px 0;
         `}
       >
         <SmDiamondIcon />
         <SmDiamondIcon />
         <SmDiamondIcon />
       </div>
-      <BorderedImage>
+      <div
+          css={css`
+            position: relative;
+            left: 100px;
+            margin: 20px 0 20px 0;
+          `} 
+        >
         <PolyOneBorder />
         <img 
-          src='assets/cv-wizard-study500px.png' 
+          src={wizardStudy} 
           alt="Wizard's Study"
           css={css`
             position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
           `} 
         />
-      </BorderedImage>
-      <BorderedImage>
+      </div>
+      <div
+        css={css`
+          position: relative;
+          right: 100px;
+          margin: 20px 0 20px 0;
+        `} 
+      >
         <PolyTwoBorder />
-      </BorderedImage>
-      <BorderedImage>
+        <img 
+          src={kingCrow} 
+          alt="King Crow"
+          css={css`
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+          `} 
+        />
+      </div>
+      <div
+        css={css`
+          position: relative;
+          left: 100px;
+          margin: 20px 0 20px 0;
+        `} 
+      >
         <PolyThreeBorder />
-      </BorderedImage>
+        <img 
+          src={kelpie} 
+          alt="Kelpie"
+          css={css`
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+          `} 
+        />
+      </div>
     </AppWrapper>
   )
 }
@@ -50,7 +103,3 @@ const AppWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
-const BorderedImage = styled.div`
-  display: flex;
-`

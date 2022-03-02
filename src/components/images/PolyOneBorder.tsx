@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-export const PolyOneBorder: React.FC<SVGProps<SVGSVGElement>> = ({ width = 900, height = 500}) => {
+export const PolyOneBorder: React.FC<SVGProps<SVGSVGElement>> = ({ width = 1040, height = 600}) => {
   return (
     <svg width={width} height={height} version="1.1" viewBox="0 0 238.12 132.29" xmlns="http://www.w3.org/2000/svg">
       <g transform="matrix(1.3973 0 0 1.3973 -604.2 -160.9)">
