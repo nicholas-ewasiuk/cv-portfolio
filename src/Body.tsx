@@ -11,6 +11,7 @@ import { PolyThreeBorder } from './components/images/PolyThreeBorder';
 import wizardStudy from "url:./assets/img/wizardstudy.png";
 import kingCrow from "url:./assets/img/kingcrow.png";
 import kelpie from "url:./assets/img/kelpie.png";
+import { breakpoints } from './App';
 
 export const Body: React.FC = () => {
 
@@ -35,6 +36,11 @@ export const Body: React.FC = () => {
             position: relative;
             left: 100px;
             margin: 20px 0 20px 0;
+            filter: brightness(70%);
+            transition: filter .14s ease;
+            &:hover {
+              filter: brightness(100%);
+            }
           `} 
         >
         <PolyOneBorder />
@@ -56,6 +62,11 @@ export const Body: React.FC = () => {
           position: relative;
           right: 100px;
           margin: 20px 0 20px 0;
+          filter: brightness(70%);
+          transition: filter .14s ease;
+          &:hover {
+            filter: brightness(100%);
+          }
         `} 
       >
         <PolyTwoBorder />
@@ -77,6 +88,11 @@ export const Body: React.FC = () => {
           position: relative;
           left: 100px;
           margin: 20px 0 20px 0;
+          filter: brightness(70%);
+          transition: filter .14s ease;
+          &:hover {
+            filter: brightness(100%);
+          }
         `} 
       >
         <PolyThreeBorder />
